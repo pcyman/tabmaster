@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "TabMaster",
+  "version": "0.1.0",
+  "description": "Copy all current-window tab URLs and open tabs from a pasted URL list.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tabmaster@local",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": ["tabs", "clipboardWrite"],
+  "action": {
+    "default_title": "TabMaster",
+    "default_popup": "popup.html"
+  }
+}
