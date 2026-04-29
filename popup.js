@@ -30,7 +30,7 @@ async function handleCopyUrls() {
       return;
     }
 
-    await copyTextToClipboard(urls.join('\n'));
+    await copyTextToClipboard(urls.join('\n') + '\n');
     setStatus(`Copied ${urls.length} URL${urls.length === 1 ? '' : 's'}.`, 'success');
   } catch {
     setStatus('Failed to copy URLs to clipboard.', 'error');
